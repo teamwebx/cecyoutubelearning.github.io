@@ -27,98 +27,11 @@
       background-color: #7DFDFE;
       color:black;
     }
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-
   </style>
 
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td style="border:none;">
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="newproject.htm">Home</a>
-    <a href="#">News</a>
-    <a href="#">Contact</a>
-  </div>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  </script>
-</td>
-<td style="border:none;">
-  <div class="styl">
-    <script type="text/javascript">
-
-        document.write("<center><font size=+3 style='color: green;'>");
-        var day = new Date();
-        var hr = day.getHours();
-        if (hr >= 0 && hr < 12) {
-            document.write(" Hey, Good Morning!");
-        } else if (hr == 12) {
-            document.write(" Hey, Good Noon!");
-        } else if (hr >= 12 && hr <= 17) {
-            document.write(" Hey, Good Afternoon!");
-        } else {
-            document.write("Hey, Good Evening!");
-        }
-        document.write("</font></center>");
-    </script>
-  </div>
-</td>
-</tr>
-</table>
   <h1>Application development using Python</h1>
   <p><strong>NOTE:</strong> Make the video full screen and do watch</p>
   <table>
