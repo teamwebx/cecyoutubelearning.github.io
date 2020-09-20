@@ -7,9 +7,7 @@
 </head>
 <style>
 body{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl6YEAge1V5s_2ABxKdLyX7dgg2pdjCUD4Aw&usqp=CAU');
-  background-size: 300%  ;
-    background-repeat: no-repeat;
+  background-color: #f7f7ee;
 }
   table {
     font-family: arial, sans-serif;
@@ -45,16 +43,7 @@ body{
   a:active {
     text-decoration: underline;
   }
-  .styl{
-    color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfwhk1exjqeI6_Y6SloQSYN2sPL-7QRuH2XA&usqp=CAU');
-    background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: 100% 100%;
-  }
+
   .sidenav {
     height: 100%;
     width: 0;
@@ -62,7 +51,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #b6eb7a;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -98,6 +87,18 @@ body{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  header {
+   background-color: #b6eb7a;
+    padding: 20px;
+  border:none;
+    font-size: 20px;
+  }
+  footer{
+    text-align: left;
+    padding: 5px;
+    background-color: #b6eb7a;
+    color: white;
+  }
 </style>
 
 <body>
@@ -111,7 +112,10 @@ body{
     <a href="#">News</a>
     <a href="CONTACT.htm">Contact</a>
   </div>
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <header>
+    <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
+  </header>
 
   <script>
   function openNav() {
@@ -122,9 +126,7 @@ body{
     document.getElementById("mySidenav").style.width = "0";
   }
   </script>
-</td>
-<td style="border:none;">
-  <div class="styl">
+
   <script type="text/javascript">
         document.write("<center><font size=+3 style='color: black;'>");
         var day = new Date();
@@ -140,10 +142,7 @@ body{
         }
         document.write("</font></center>");
     </script>
-  </div>
-</td>
-</tr>
-</table>
+
   <table>
     <tr>
       <td style="border:none;">
@@ -199,6 +198,9 @@ body{
   <!-- hitwebcounter Code START -->
   <a href="https://www.hitwebcounter.com" target="_blank">
     <img src="https://hitwebcounter.com/counter/counter.php?page=7672346&style=0005&nbdigits=4&type=page&initCount=50" title="Total Website Hits" Alt="Web Hits" border="0" /></a>
-</body>
+<footer>
+  External links
+</footer>
+  </body>
 
 </html>
