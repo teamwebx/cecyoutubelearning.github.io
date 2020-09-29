@@ -147,8 +147,10 @@
             document.write("Good Noon!");
           } else if (hr >= 12 && hr <= 17) {
             document.write("Good Afternoon!");
-          } else {
-            document.write("Good Evening!");
+          } else if(hr>17 && hr<=20 ){
+            document.write("Good evening!");
+          }else{
+            document.write("Good night!");
           }
           document.write("</font></center>");
         </script>
