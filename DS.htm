@@ -3,37 +3,50 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="responsive.css">
   <title>DS</title>
-
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 10px;
-}
-
-table th {
-    color: white;
-    background-color: gray;
-}
-</style>
+  <style media="screen">
+    #coll{
+      border: none;
+    }
+  </style>
 </head>
+
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.htm">Home</a>
+    <a href="#">News</a>
+    <a href="CONTACT.htm">Contact</a>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+  <header>
+    <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
+  </header>
+
+  <marquee>updated 29/09/2020 21:45PM</marquee>
   <h1>Data Structure (DS).</h1>
   <p><strong>NOTE:</strong> Make the video full screen and do watch</p>
 
   <table>
     <tr>
       <th>
-      SR NO
+        SR NO
       </th>
       <th>
-      TOPIC
+        TOPIC
       </th>
       <th>
-      VIDEO LECTURE
+        VIDEO LECTURE
       </th>
     </tr>
 
