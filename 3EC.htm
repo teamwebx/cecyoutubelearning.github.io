@@ -1,0 +1,174 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC</title>
+</head>
+<style>
+  * {
+    margin: -2;
+  }
+
+  body {
+    background-color: #f7f7ee;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+
+  table th {
+    background-color: white;
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b6eb7a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  header {
+    background-color: #b6eb7a;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 30px;
+    background-color: #17706e;
+    color: black;
+  }
+</style>
+
+<body>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.htm">Home</a>
+          <a href="2ECE.htm">3 SEM EC</a>
+          <a href="CONTACT.htm">Contact</a>
+        </div>
+        <header>
+          <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
+        </header>
+        <br>
+        <marquee>updated 12/10/2020</marquee>
+        <br>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+
+        <table>
+          <tr>
+            <th>SR NO</th>
+            <th>SUBJECT</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td><a href="3ECMAT3.htm">Engineering Mathematics-3 (MAT).</a></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td><a href="3ECED.htm">Electronic Devices (ED).</a></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td><a href="3ECNT.htm">Network Theory (NT).</a></td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td><a href="3ECDSD.htm">Digital System Design (DSD).</a></td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td><a href="3ECCOA.htm">COMPUTER ORGANISATION (CO).</a></td>
+
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td><a href="3ECPEI.htm">Power Electronics (PEI).</a></td>
+          </tr>
+
+        </table>
+
+</body>
+
+</html>
