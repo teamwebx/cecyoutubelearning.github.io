@@ -1,114 +1,160 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ME </title>
-  <link rel="stylesheet" href="..\responsive.css">
+  <title="ME">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+<style>
+  * {
+    margin: -2;
+  }
+
+  body {
+    background-color: #f7f7ee;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+
+  table th {
+    background-color: white;
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration:wavy;
+  }
+
+  a:active {
+    text-decoration: wavy;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b6eb7a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  header {
+    background-color: #b6eb7a;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 30px;
+    background-color: #17706e;
+    color: black;
+  }
+</style>
+
 <body>
 
-  <table>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.htm">Home</a>
-      <a href="5CSE.htm">5 SEM CS</a>
-      <a href="CONTACT.htm">Contact</a>
-    </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-  
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-  
-    <header>
-      <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
-    </header>
-    <br>
-    <marquee>UPDATED 13/10/2020 10:50AM</marquee>
-    <br>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.htm">Home</a>
+          <a href="2CSE.htm">3 SEM CS</a>
+          <a href="CONTACT.htm">Contact</a>
+        </div>
+        <header>
+          <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
+        </header>
+        <br>
+        <marquee>updated 12/10/2020</marquee>
+        <br>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
 
-    <h1>Management and Entreprenuer for IT Industry (ME).</h1>
-    <p><strong>NOTE:</strong> Make the video full screen and do watch.</p>
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+        <br>
+        <table>
+          <tr>
+            <th>SR NO</th>
+            <th>MODULE</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td><a href="MEM1.htm">MODULE-1</a></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td><a href="MEM2.htm">MODULE-2</a></td>
+          </tr>
 
-    <tr>
-      <td>M1 L1</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/5bROam5Epy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Nature of Management, Characteristics of Management, Functions of Management,<br> Scope of Management concepts are discussed.</td>
-    </tr>
-    <tr>
-      <td>M1 L2</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/9u-JnWo5NDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td> Goals of Management, Levels of Management, Skills of Manager,<br> Evolution of Management are discussed.</td>
-    </tr>
-    <tr>
-      <td>M1 L3</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/Qtxc_fFJH7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Evolution of Management concept, Early management approaches like Scientific management,<br> Administrative management, Bureaucracy, Neo classical approaches like Human relations movement</td>
-    </tr>
-    <tr>
-      <td>M1 L5</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/z0LGbr__VmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Planning- Nature, Importance, Types of Plans.</td>
-    </tr>
-    <tr>
-      <td>M1 L6</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/fravUp2eLOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td> Planning, Organization, Characteristics of Organization, Nature of Organization, Purpose of Organization are discussed.</td>
-    </tr>
-    <tr>
-      <td>M1 L7</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/Vzh0b6_H6xg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Types of Organization: Formal organization,Informal organization, Line organization, Functional organization,  Line & Staff organization, Committee organization are discussed.</td>
-    </tr>
-    <tr>
-      <td>M1 L8</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/E8FcUoV0yqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Staffing, Importance of Staffing, Recruitment's, Steps in Selection Procedure are discussed.</td>
-    </tr>
-    <tr>
-      <td>M2 L1</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/uXYH7iIogYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Meaning and nature of directing, principles of directing, elements of directing are discussed.</td>
-    </tr>
-    <tr>
-      <td>M2 L2</td>
-     
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/R_aER6taRv8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>leadership meaning, importance of leadership and leadership styles are discussed.</td>
-    </tr>
-    <tr>
-      <td>M2 L3</td>
-     
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/IuemtlJYEwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Motivation, Motivation Theories like Maslow’s Need Hierarchy Theory, Hertzberg’s Two Factors Theory, McClelland’s Need Theory, Victor Vroom’s Expectancy Theory, Adam’s Equity Theory, Skinner’s Behaviour Modification Theory are discussed.</td>
-    </tr>
-    <tr>
-      <td>M2 L4</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/X86xjmYJkVs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Communication: Meaning and Importance is discussed.</td>
-    </tr>
-    <tr>
-      <td>M2 L5</td>
-      
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/nTucKCR6zu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Coordination- Meaning and Importance, Techniques of Coordination</td>
-    </tr>
-  </table>
-  <p><strong>Note:</strong>L4 video is not there from L3 to L5 continuation(As advised by mam.)</p>
+
+          
+        </table>
+
 </body>
 
 </html>
