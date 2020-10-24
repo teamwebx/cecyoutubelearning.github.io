@@ -1,148 +1,158 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\..\responsive.css">
-  <title>CO</title>
+  <title="CO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+<style>
+  * {
+    margin: -2;
+  }
+
+  body {
+    background-color: #f7f7ee;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+
+  table th {
+    background-color: white;
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration:wavy;
+  }
+
+  a:active {
+    text-decoration: wavy;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b6eb7a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  header {
+    background-color: #b6eb7a;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 30px;
+    background-color: #17706e;
+    color: black;
+  }
+</style>
 
 <body>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.htm">Home</a>
-    <a href="2CSE.htm">3 SEM CS</a>
-    <a href="CONTACT.htm">Contact</a>
-  </div>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.htm">Home</a>
+          <a href="2CSE.htm">3 SEM CS</a>
+          <a href="CONTACT.htm">Contact</a>
+        </div>
+        <header>
+          <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
+        </header>
+        <br>
+        <marquee>updated 12/10/2020</marquee>
+        <br>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
 
-  <header>
-    <button style="font-size:40px;cursor:pointer;color:white;background-color:#b6eb7a;border:none;" onclick="openNav()">☰</button>
-  </header>
-
-  <marquee>UPDATED 13/10/2020 10:50AM</marquee>
-  <h1>Computer Organization(CO).</h1>
-  <p><strong>NOTE:</strong> Make the video full screen and do watch</p>
-
-  <table>
-    <tr>
-      <td>M1 L1</td>
-     
-      <td><iframe width="310" height="180" src="https://www.youtube.com/embed/0A_aXofo3T0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Introduction to Computer Organization, Demonstration of C program to Assembly language program conversion, Basic operational concepts and the instruction execution steps with example.</td>
-    </tr>
-    <tr>
-      <td>M1 L2</td>
-        <td><iframe width="310" height="180" src="https://www.youtube.com/embed/BAnE0utCyYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Bus Structures, Types of Buses, Performance factors: Cache, Clock, Clock Rate, Clock Cycle, Performance Equation, Pipelining, Superscalar Operations, Role of Compiler, RISC, CISC, Performance Measurement and Equitation, Multiprocessor and Multi-computers</td>
-    </tr>
-    <tr>
-      <td>M1 L3</td>
-          <td><iframe width="310" height="180" src="https://www.youtube.com/embed/MCS_bq7lWW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      <td>Binary number system and hexadecimal number system in the perspective of memory addressing. Also conversion between these two number systems has been explained.</td>
-    </tr>
-    <tr>
-      <td>M1 L4</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/5PA05HiMwqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>How to assign addresses to memory locations. Addressing scheme is also discussed which helps to find size of memory based on address size. Byte addressing concept is also explained.
-            </td>
-          </tr>
-    <tr>
-      <td>M1 L5</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/nKSBPE2zS8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>You can find explanation of word alignment and explained how to find whether a memory is aligned using word address. Also you can find explanation on Big Endian and Little Endian way of meory assignment.</td>
-          </tr>
-    <tr>
-      <td>M1 L6</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/0FuKSn9jwBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>Representation of character and strings using ASCII codes. Also I have explained how big and little endian assignments work with ASCII represented strings.</td>
-          </tr>
-    <tr>
-      <td>M1 L7</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/D51L8UlXLiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>About instructions and sequences. The order of instructions execution is discussed in the perspective of memory.   </td>
-          </tr>
-    <tr>
-      <td>M1 L8</td>
-        <td><iframe width="310" height="180" src="https://www.youtube.com/embed/429ktQm8th8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-        <td>Various condition codes and use of condition codes.</td>
-      </tr>
-    <tr>
-      <td>M1 L9</td>
-         <td><iframe width="310" height="180" src="https://www.youtube.com/embed/x8ZUK7ZWyCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-         <td>Various addressing modes used to refer the operands of an instruction with syntax and examples.</td>
-        </tr>
-    <tr>
-      <td>M1 L10</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/6r8TfTtySn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>How processor interacts or communicates with input and output devices.</td>
-          </tr>
-    <tr>
-      <td>M1 L11</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/CKWzeCrCYZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>Compare instruction and how it helps in decision making of conditional branching.</td>
-          </tr>
-    <tr>
-      <td>M1 L12</td>
-           <td><iframe width="310" height="180" src="https://www.youtube.com/embed/2gw3nl5LOnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-           <td> Concepts of stack and how stack is implemented in memory. Also push and pop operations of stack are explained with example for better understanding.</td>
-          </tr>
-    <tr>
-      <td>M2 L1</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/J0zBzRrohuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>How processor makes communication with input or output devices using program controlled I/O.</td>
-          </tr>
-    <tr>
-      <td>M2 L2</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/yIi03HkYcUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>How processor makes communication with input or output devices using interrupts. </td>
-          </tr>
-    <tr>
-      <td>M2 L3</td>
-          <td><iframe width="310" height="180" src="https://www.youtube.com/embed/EWddEYatY2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-          <td>Interrupt hardware, Enabling and disabling interrupts, Sequence of events, Handling multiple devices using vectored interrupt technique and polling mechanism.</td>
-        </tr>
-    <tr>
-      <td>M2 L4</td>
-           <td><iframe width="310" height="180" src="https://www.youtube.com/embed/OZKigKYJRZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-           <td>Priority structure, Daisy chain scheme and Priority groups. I have also explained Exceptions and few types</td>
-          </tr>
-    <tr>
-      <td>M2 L5</td>
-           <td><iframe width="310" height="180" src="https://www.youtube.com/embed/qeK4x-oYdVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-           <td>Direct memory access concept which is one of the mechanism to communicate with I/O devices by the processor when large amount of data has to be transferred between memory and I/O device.</td>
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+        <br>
+        <table>
+          <tr>
+            <th>SR NO</th>
+            <th>MODULE</th>
           </tr>
           <tr>
-            <td>M2 L6</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/XDOt6p7MBZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td>Bus Arbitration in Direct Memory Access. Two types of Bus Arbitration techniques are explained here with examples. 1. Distributed Bus Arbitration, 2. Centralised Bus Arbitration
-              This video is last part of Direct Memory Access.</td>
+            <td>1.</td>
+            <td><a href="2COM1.htm">MODULE-1</a></td>
           </tr>
           <tr>
-            <td>M2 L7</td>
-            <td><iframe width="310" height="180" src="https://www.youtube.com/embed/P_lYvduv6CE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td> Bus and two technique to communicate using bus. That are synchronous and asynchronous bus.
-              Also these techniques are explained using timing diagrams of address, data and control signals.</td>
-          </tr>          
-          <tr>
-            <td></td>
-            <td><iframe width="310" height="180" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td></td>
-          </tr>        
-          <tr>
-            <td></td>
-            <td><iframe width="310" height="180" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <td></td>
+            <td>2.</td>
+            <td><a href="2COM2.htm">MODULE-2</a></td>
           </tr>
-  </table>
+
+          
+        </table>
 
 </body>
 
