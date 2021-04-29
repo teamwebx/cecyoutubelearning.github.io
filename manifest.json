@@ -1,0 +1,20 @@
+{
+    "short_name": "PWA1",
+    "name": "My First PWA Attempte",
+    "icons": [
+      {
+        "src": "https://www.canaraengineering.in//assets/images/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "https://www.canaraengineering.in//assets/images/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.htm",
+    "background_color": "#000000",
+    "display": "standalone",
+    "theme_color": "#ff0000"
+  }
